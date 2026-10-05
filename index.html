@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Render üzerinde ücretsiz yayınlanmaya hazır statik HTML sitesi">
+    <title>Hoş Geldiniz</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, #111827, #2563eb);
+            color: white;
+        }
+        .card {
+            width: min(90%, 700px);
+            padding: 48px 32px;
+            text-align: center;
+            background: rgba(255,255,255,.1);
+            border: 1px solid rgba(255,255,255,.2);
+            border-radius: 24px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 20px 60px rgba(0,0,0,.25);
+        }
+        h1 { font-size: clamp(2rem, 6vw, 4rem); margin-bottom: 16px; }
+        p { color: #dbeafe; font-size: 1.1rem; line-height: 1.7; margin-bottom: 28px; }
+        .status {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 999px;
+            background: #16a34a;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<main class="card">
+    <h1>Merhaba 👋</h1>
+    <p>Bu statik HTML sitesi Render üzerinde yayınlanmaya hazır.</p>
+    <span class="status">● Site aktif</span>
+</main>
+</body>
+</html>
